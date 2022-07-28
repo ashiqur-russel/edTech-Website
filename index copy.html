@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>edTech</title>
+            <!-- CSS only -->
+            <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+                  crossorigin="anonymous"> -->
+
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+            <script>
+                  tailwind.config = {
+                        theme: {
+                              extend: {
+                                    colors: {
+                                          clifford: '#da373d',
+                                    }
+                              }
+                        }
+                  }
+            </script>
+
+      </head>
+
+      <body>
+            <header>
+                  <!--   <nav class="navbar navbar-expand-lg bg-light container pt-1 pb-1">
+
+                        <div class="container-fluid d-flex justify-content-evenly">
+                              <div>
+                                    <a class="navbar-brand" href="#">
+                                          <h1 class="display-5">Pro Edu</h1>
+                                    </a>
+
+                              </div>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse d-flex justify-content-center"
+                                    id="navbarNav">
+                                    <ul class="navbar-nav d-flex justify-content-evenly">
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link active" aria-current="page"
+                                                      href="#">Home</a>
+                                          </li>
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link" href="#">Courses</a>
+                                          </li>
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link" href="#">Deals</a>
+                                          </li>
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link ">Sources</a>
+                                          </li>
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link ">About</a>
+                                          </li>
+                                          <li class="nav-item p-5">
+                                                <a class="nav-link ">Resources</a>
+                                          </li>
+                                    </ul>
+                              </div>
+                              <div><button type="button"
+                                          class="btn btn-outline-secondary">Secondary</button>
+                              </div>
+                        </div>
+                  </nav> -->
+
+                  <!--    <div class="container mx-auto pt-8  f">
+                        <nav class="flex items-center justify-evenly">
+                              <div>
+                                    <h1 class="text-3xl text-slate-800 font-bold">Ed Tech</h1>
+                              </div>
+                              <div>
+                                    <ul class="flex items-center justify-evenly">
+                                          <li class="m-6">Home</li>
+                                          <li class="m-6">Course</li>
+                                          <li class="m-6">Deals</li>
+                                          <li class="m-6">Success</li>
+                                          <li class="m-6">About</li>
+                                          <li class="m-6">Register</li>
+                                    </ul>
+                              </div>
+                              <div><button>Registration</button></div>
+                        </nav>
+                  </div> -->
+
+                  <nav class="fixed top-0 left-0 bg-white w-full mt-5">
+                        <div
+                              class="container m-auto flex justify-between items-center text-gray-700">
+                              <h1 class="pl-8 py-4 text-xl font-bold">HARTDEV</h1>
+                              <ul
+                                    class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
+                                    <li class="hover:bg-gray-200 py-4 px-6">Home</li>
+                                    <li class="hover:bg-gray-200 py-4 px-6">Contact</li>
+                                    <li class="hover:bg-gray-200 py-4 px-6">Services</li>
+                                    <li class="hover:bg-gray-200 py-4 px-6">About</li>
+                              </ul>
+                              <button
+                                    class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group">
+                                    <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+                                    <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+                                    <div class="w-5 h-1 bg-gray-600"></div>
+                                    <div class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0
+                        group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+                                          <ul
+                                                class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+                                                <li class="hover:bg-gray-200 py-4 px-6 w-full">Home
+                                                </li>
+                                                <li class="hover:bg-gray-200 py-4 px-6 w-full">
+                                                      Contact</li>
+                                                <li class="hover:bg-gray-200 py-4 px-6 w-full">
+                                                      Services</li>
+                                                <li class="hover:bg-gray-200 py-4 px-6 w-full">About
+                                                </li>
+                                          </ul>
+                                          <ul>
+
+                                                <p
+                                                      class=" border border-1 uppercas py-3 px-4 text-blue-400 rounded-xl font-semibold ">
+                                                      Registration</p>
+
+                                          </ul>
+                                    </div>
+
+                              </button>
+
+                              <p class=" border border-1 uppercas py-3 px-4 text-blue-400 rounded-xl font-semibold hidden md:block lg:block transition duration-150 ease-in-out hover:cursor-pointer"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                    Registration</p>
+
+                              <!-- Modal -->
+                              <!-- Modal toggle -->
+                              <!-- Modal toggle -->
+                              <button
+                                    class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                    type="button" data-modal-toggle="defaultModal">
+                                    Toggle modal
+                              </button>
+
+                              <!-- Main modal -->
+                              <div id="defaultModal" tabindex="-1"
+                                    class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex"
+                                    aria-modal="true" role="dialog">
+                                    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                                          <!-- Modal content -->
+                                          <div
+                                                class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                                <!-- Modal header -->
+                                                <div
+                                                      class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+                                                      <h3
+                                                            class="text-xl font-semibold text-gray-900 dark:text-white">
+                                                            Terms of Service
+                                                      </h3>
+                                                      <button type="button"
+                                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                            data-modal-toggle="defaultModal">
+                                                            <svg aria-hidden="true" class="w-5 h-5"
+                                                                  fill="currentColor"
+                                                                  viewBox="0 0 20 20"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                                                  <path fill-rule="evenodd"
+                                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                                        clip-rule="evenodd"></path>
+                                                            </svg>
+                                                            <span class="sr-only">Close modal</span>
+                                                      </button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="p-6 space-y-6">
+                                                      <p
+                                                            class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                                            With less than a month to go before the
+                                                            European Union enacts new
+                                                            consumer privacy laws for its citizens,
+                                                            companies around the world are
+                                                            updating their terms of service
+                                                            agreements to comply.
+                                                      </p>
+                                                      <p
+                                                            class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                                            The European Union’s General Data
+                                                            Protection Regulation (G.D.P.R.)
+                                                            goes into effect on May 25 and is meant
+                                                            to ensure a common set of data
+                                                            rights in the European Union. It
+                                                            requires organizations to notify
+                                                            users as soon as possible of high-risk
+                                                            data breaches that could
+                                                            personally affect them.
+                                                      </p>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div
+                                                      class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
+                                                      <button data-modal-toggle="defaultModal"
+                                                            type="button"
+                                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                                                            accept</button>
+                                                      <button data-modal-toggle="defaultModal"
+                                                            type="button"
+                                                            class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+
+
+                        </div>
+                  </nav>
+            </header>
+
+            <!-- JavaScript Bundle with Popper -->
+            <script
+                  src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                  crossorigin="anonymous">
+                  </script>
+            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+
+      </body>
+
+</html>
