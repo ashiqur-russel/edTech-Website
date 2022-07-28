@@ -47,18 +47,19 @@
                                                 <a class="nav-link" href="#">Deals</a>
                                           </li>
                                           <li class="nav-item px-3">
-                                                <a class="nav-link ">Sources</a>
+                                                <a class="nav-link ">Success</a>
                                           </li>
                                           <li class="nav-item px-3">
                                                 <a class="nav-link ">About</a>
                                           </li>
                                           <li class="nav-item px-3">
-                                                <a class="nav-link ">Resources</a>
+                                                <a class="nav-link ">Register</a>
                                           </li>
                                     </ul>
                               </div>
-                              <div><button type="button"
-                                          class="btn btn-outline-info">Registration</button>
+                              <div><button type="button" class="btn btn-outline-info"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal">Registration</button>
                               </div>
                         </div>
                   </nav>
@@ -312,13 +313,77 @@
                                                 of a page when looking at its layout.</p>
                                     </div>
                                     <div>
-                                          <button class="btn btn-light text-info">Register
+                                          <button class="btn btn-light text-info"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Register
                                                 Now</button>
                                     </div>
                               </div>
 
                         </section>
                         <!-- Join section end -->
+
+                        <!-- Modal start -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                              aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                    <div class="modal-content">
+                                          <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                      Please fill up the form
+                                                </h5>
+                                                <button type="button" class="btn-close"
+                                                      data-bs-dismiss="modal"
+                                                      aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                                <form>
+                                                      <div class="mb-3">
+                                                            <label for="first-name"
+                                                                  class="col-form-label">First
+                                                                  Name:</label>
+                                                            <input type="text" class="form-control"
+                                                                  id="recipient-name">
+                                                      </div>
+                                                      <div class="mb-3">
+                                                            <label for="last-name"
+                                                                  class="col-form-label">Last
+                                                                  Name:</label>
+                                                            <input type="text" class="form-control"
+                                                                  id="recipient-name">
+                                                      </div>
+                                                      <div class="mb-3">
+                                                            <label for="email"
+                                                                  class="col-form-label">Email:</label>
+                                                            <input class="form-control"
+                                                                  id="message-text"></input>
+                                                      </div>
+                                                      <div class="mb-3">
+                                                            <label for="password"
+                                                                  class="col-form-label">Password:</label>
+                                                            <input class="form-control"
+                                                                  id="message-text"></input>
+                                                      </div>
+                                                      <div class="mb-3">
+                                                            <label for="password"
+                                                                  class="col-form-label">Confirm
+                                                                  Password:</label>
+                                                            <input class="form-control"
+                                                                  id="message-text"></input>
+                                                      </div>
+                                                </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                      data-bs-dismiss="modal">Close</button>
+                                                <button type="button"
+                                                      class="btn btn-primary">Register
+                                                </button>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- Modal end -->
 
                         <!-- successfull students start -->
                         <section class="my-5 py-5">
