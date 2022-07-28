@@ -43,3 +43,7 @@ body{
 .carousel-caption>p{
       font-size: 1.2rem;
 }
+
+.fa-star{
+      color: rgb(255, 226, 62);
+}
